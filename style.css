@@ -1,0 +1,146 @@
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#search,
+#button {
+    height: 40px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#search {
+    width: 30%;
+}
+
+#button{
+    background-color: aqua;
+    color: black;
+    width: 5%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+        flex-wrap: wrap; /* ensures wrapping on small screens */
+    margin-top: 20px;
+}
+
+
+.images{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+     width: 90%;
+    /* border: 2px solid white;
+    height: 10px;
+    width: 100px; */
+
+}
+
+
+.images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.images img:hover {
+    transform: scale(1.03);
+}
+
+
+#load {
+    background-color: aqua;
+    color: black;
+    width: 150px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#load:hover {
+    background-color: #00cccc;
+}
+
+
+
+
+
+
+
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+    #search {
+        width: 60%;
+    }
+
+    #button {
+        width: 20%;
+    }
+
+    .images {
+        gap: 10px;
+    }
+
+    #load {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .main {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #search {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    #button {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .images {
+        grid-template-columns: 1fr; /* single column on small screens */
+        width: 100%;
+    }
+
+    #load {
+        width: 100%;
+        font-size: 0.9rem;
+        height: 40px;
+        border-radius: 10px;
+    }
+}
