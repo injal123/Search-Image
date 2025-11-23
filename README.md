@@ -45,7 +45,7 @@ SearchImages-App/
 
 
 ## Live Demo:
-Try it out here: 
+Try it out here: [click here](https://injal123.github.io/Search-Image/)
 
 
 ## Screenshots:
