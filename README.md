@@ -35,10 +35,8 @@ This project demonstrates API integration, asynchronous JavaScript, and DOM mani
 <pre>
 SearchImages-App/
 ├── index.html
-├── style/
-│   └── style.css
-├── script/
-│   └── index.js
+├── style.css
+├── index.js
 └── README.md
 </pre>
 
